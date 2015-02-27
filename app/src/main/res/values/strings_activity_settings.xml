@@ -1,0 +1,22 @@
+<resources>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_default" translate="false">94043</string>
+    <string name="pref_location_key" translate = "false" >location</string>
+
+    <string name="pref_units_label" translate = "false">Temperature Units</string>
+    <string name = "pref_units_metric" translate = "false">Metric</string>
+    <string name = "pref_units_imperial" translate = "false">Imperial</string>
+
+    <string name ="pref_units_key" translate = "false">units</string>
+
+
+
+
+
+</resources>
