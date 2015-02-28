@@ -13,6 +13,8 @@ import android.view.MenuItem;
 
 public class MyActivity extends ActionBarActivity {
 
+    private final String LOG_TAG = MyActivity.class.getSimpleName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +52,6 @@ public class MyActivity extends ActionBarActivity {
     }
 
     private void openPreferredLocationMap() {
-        final String LOG_TAG = ForecastFragment.FetchWeatherTask.class.getSimpleName();
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         String location = sharedPreferences.getString(getString(R.string.pref_location_key), getString(R.string.pref_location_default));

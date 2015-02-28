@@ -68,7 +68,7 @@ public class TestUtilities extends AndroidTestCase {
      */
     static ContentValues createNorthPoleLocationValues() {
         // Create a new map of values, where column names are the keys
-       ContentValues testValues = new ContentValues();
+        ContentValues testValues = new ContentValues();
         testValues.put(WeatherContract.LocationEntry.COLUMN_LOCATION_SETTING, TEST_LOCATION);
         testValues.put(WeatherContract.LocationEntry.COLUMN_CITY_NAME, "North Pole");
         testValues.put(WeatherContract.LocationEntry.COLUMN_COORD_LAT, 64.7488);
@@ -81,7 +81,7 @@ public class TestUtilities extends AndroidTestCase {
         Students: You can uncomment this function once you have finished creating the
         LocationEntry part of the WeatherContract as well as the WeatherDbHelper.
      */
-   static long insertNorthPoleLocationValues(Context context) {
+    static long insertNorthPoleLocationValues(Context context) {
         // insert our test records into the database
         WeatherDbHelper dbHelper = new WeatherDbHelper(context);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
